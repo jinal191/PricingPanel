@@ -1,0 +1,122 @@
+html, body, div, span, h2, p, a, ul, li, img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    line-height: 1;
+    background-color: #6ca9ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mainSection{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.Images{
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.Heading {
+    color: grey;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.Attributes{
+    margin: 50px 0 25px;
+    color: rgb(0, 104, 241);
+}
+
+.AttributesPoint{
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid rgb(151, 207, 211);
+}
+
+.AttributesPoint:nth-child(3){
+    border:none;
+}
+
+.Price{
+    color: rgb(0, 104, 241);
+    display: block;
+        font-weight: 1500px;
+        font-size: 32px;
+        border-top: 1px solid rgb(151, 207, 211);
+}
+
+.SignButton{
+    border: 1px solid rgb(0, 104, 241);
+        border-radius: 5px;
+        color: rgb(0, 104, 241);
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px 35px;
+        margin: 25px;
+        transition: 0.1s ease-in-out;
+}
+
+.SignButton:hover , .SignButton:focus {
+    background-color: rgb(151, 207, 211);
+}
+
+.SignButton.different{
+    background-color: rgb(0, 104, 241);
+    color: white;
+}
+
+.SignButton.different:hover , .SignButton.different:focus {
+    background-color: rgb(151, 207, 211);
+    color: white;
+}
+
+@media(min-width: 700px){
+    .mainSection{
+        flex-direction: row;
+    }
+
+    .subSection{
+        padding: 25px;
+        border-right: 1px solid rgb(151, 207, 211);
+    }
+
+    .subSection:last-child{
+        border: none;
+    }
+}
